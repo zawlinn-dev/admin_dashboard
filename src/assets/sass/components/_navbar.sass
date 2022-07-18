@@ -1,0 +1,36 @@
+
+.navItem
+    @extend %d_flex
+    padding: 12px 0 12px 20px
+    margin-bottom: 1px
+    color: #444
+    transition: all .3s linear
+
+    &:hover
+        background: getColor(theme_01)
+        color: getColor(primary)
+
+        .navIcon
+            color: getColor(primary)
+    
+    .navIcon
+        margin-right: 8px
+        color: getColor(theme_01)
+
+    .navTxt
+        font-size: 15px
+
+
+.menuTitle
+    font-weight: bolder
+    font-size: 18px
+    padding: 15px 10px        
+
+.active
+    background: getColor(theme_01)
+    color: getColor(primary)
+
+    .navIcon
+        color: getColor(primary)
+
+

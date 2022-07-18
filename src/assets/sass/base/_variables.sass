@@ -1,0 +1,32 @@
+
+// Colors Variables
+
+$primary : #fff
+$secondary : #000
+$icon: #633492
+$theme_01: #E91E63
+$theme_02: #344767
+$theme_03: #1A73E8
+$theme_04: #4CAF50
+$theme_05: #FB8C00
+$theme_06: #F44335
+
+// Light Theme Colors
+
+$colors : ( 'primary': $primary, 'secondary': $secondary, 'icon': $icon, 'theme_01': $theme_01, 'theme_02': $theme_02, 'theme_03': $theme_03, 'theme_04': $theme_04, 'theme_05': $theme_05, 'theme_06': $theme_06)
+
+// Dark Theme Colors
+
+$dark_colors : ( 'primary': $secondary, 'secondary': $primary, 'icon': $icon)
+
+
+
+:root
+    @each $name, $color in $colors
+
+        --#{$name} : #{$color}
+
+.dark
+    @each $name, $color in $dark_colors
+
+        --#{$name} : #{$color}

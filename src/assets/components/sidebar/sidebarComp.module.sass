@@ -1,0 +1,39 @@
+@import '../../sass/base/variables'
+@import '../../sass/methods/functions'
+@import '../../sass/components/placeholder'
+
+
+.mainSide
+    width: 250px
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    background: getColor(primary)
+    border-right: 1px solid #ddd
+    transition: all .5s ease-in-out
+
+    .top
+        height: 50px
+        width: 100%
+        @extend %d_flex_center
+        border-bottom: 1px solid #ddd
+
+        .logoIcon
+            color: getColor(theme_01)
+
+        
+        a
+            font-weight: bold
+            font-size: 18px
+            text-transform: uppercase
+
+
+
+    .center
+        padding-top: 20px // paddding adjust
+
+
+
+.slideBar_100
+    left: -100%
